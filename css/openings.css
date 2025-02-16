@@ -1,0 +1,152 @@
+.openings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 6rem 0;
+}
+
+.openings h1 {
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #893290;
+}
+
+.openings .description {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #893290;
+}
+
+.positions {
+    width: 100%;
+}
+
+.position {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #d9d9d9;
+    transition: all 0.2s;
+}
+
+.position .header {
+    display: flex;
+    padding: 16px 24px;
+    padding-inline-start: 16px;
+    line-height: 1.5;
+    background-color: #893290;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.position .title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.position .header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.position .header i {
+    font-size: 0.875rem;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.position.active .header i {
+    transform: rotate(90deg);
+}
+
+.position .body {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    padding: 0 24px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+.position.active .body {
+    max-height: 500px;
+    padding: 24px;
+    border-top-color: #d9d9d9;
+}
+
+.position .body ul {
+    padding-left: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    list-style-type: disc;
+}
+
+.position .body li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #893290;
+    list-style-type: disc;
+}
+
+.position .body li:last-child {
+    margin-bottom: 0;
+}
+
+.position .body a {
+    color: #893290;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.position .body a:hover {
+    color: #69b1ff;
+}
+
+@media (max-width: 768px) {
+    .openings {
+        padding: 80px 0;
+    }
+
+    .openings h1 {
+        font-size: 2rem;
+    }
+
+    .openings .description {
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+
+    .positions {
+        padding: 0 1rem;
+    }
+
+    .position .header {
+        padding: 1rem;
+    }
+
+    .position .body {
+        padding: 0 1rem;
+    }
+
+    .position.active .body {
+        padding: 1rem;
+    }
+
+    .position .body li {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+}
