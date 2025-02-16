@@ -1,0 +1,380 @@
+.intro {
+    padding: 8rem 0;
+}
+
+.intro .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h2 {
+    color: #893290;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.intro .content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro p {
+    flex: 3;
+    color: #893290;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.intro a {
+    color: #D4A6E3;
+    transition: color 0.3s;
+}
+
+.intro a:hover {
+    color: #B76ECF;
+}
+
+.intro .image {
+    flex: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.divide-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    transform: none;
+}
+
+.divide-line .earth {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divide-line .earth img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.divide-line .line {
+    flex: 1;
+    height: 2px;
+    background-color: #000;
+}
+
+.divide-line .logo {
+    width: 280px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divide-line .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    .divide-line {
+        gap: 3rem;
+    }
+
+    .divide-line .earth {
+        width: 120px;
+        height: 120px;
+    }
+
+    .divide-line .logo {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 3rem 0;
+    }
+
+    .intro h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .intro .content {
+        flex-direction: column;
+    }
+
+    .intro p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .intro .image {
+        width: 100%;
+    }
+
+    .divide-line {
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .divide-line .earth {
+        width: 80px;
+        height: 80px;
+    }
+
+    .divide-line .logo {
+        width: 140px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .divide-line {
+        gap: 0.5rem;
+    }
+
+    .divide-line .earth {
+        width: 30px;
+        height: 30px;
+    }
+
+    .divide-line .logo {
+        width: 50px;
+        height: 25px;
+    }
+}
+
+.areas {
+    padding: 6rem 0;
+}
+
+.areas h2 {
+    color: #893290;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.areas .list {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.areas .item {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.areas img {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.areas .item:not(.reverse) img {
+    left: 5%;
+}
+
+.areas .reverse img {
+    right: 5%;
+}
+
+.areas .info {
+    position: absolute;
+    background-color: rgba(107, 44, 138, 0.9);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 20rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.areas .item:not(.reverse) .info {
+    right: 15%;
+}
+
+.areas .reverse .info {
+    left: 15%;
+}
+
+.areas .info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.areas .info p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.awards {
+    padding: 6rem 0;
+}
+
+.awards h2 {
+    color: #893290;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.awards .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.awards .item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #d1d5db;
+}
+
+.awards .year {
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #893290;
+}
+
+.awards .content {
+    flex: 1;
+    display: inline;
+}
+
+.awards h3 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+    color: #893290;
+}
+
+.awards p {
+    display: inline;
+    font-weight: 100;
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #893290;
+}
+    
+
+@media (max-width: 768px) {
+    .awards .year {
+        font-size: 1rem;
+    }
+
+    .awards h3 {
+        font-size: 0.875rem;
+    }
+
+    .awards p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .areas .info {
+        width: 18rem;
+    }
+    
+    .areas .item:not(.reverse) .info {
+        right: 5%;
+    }
+    
+    .areas .reverse .info {
+        left: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .areas{
+        padding: 3rem 0;
+    }
+    .awards{
+        padding: 3rem 0;
+    }
+    .areas .list{
+        gap: 2.5rem;
+        padding: 0 ;
+    }
+    .areas .item {
+        height: auto;
+    }
+
+    .areas .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .areas .content img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto !important;
+        right: auto !important;
+        order: 0;
+    }
+
+    .areas .content .info {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        transform: none;
+        border-radius: 0;
+        text-align: center;
+        background-color: #8B1538;
+        left: auto !important;
+        right: auto !important;
+        order: 1;
+    }
+}
+
