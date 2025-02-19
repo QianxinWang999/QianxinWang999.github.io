@@ -59,7 +59,7 @@ li {
 }
 
 .navbar .nav a {
-    font-size: 1.125rem;
+    font-size: 1.465rem;
     line-height: 1.75rem;
     color: #e5e7eb;
     transition: all 0.3s ease;
@@ -141,13 +141,13 @@ li {
 
 .footer .journal {
     font-size: 0.75rem;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 300;
 }
 
 .footer .more {
     font-size: 0.875rem;
-    font-style: italic;
+    /* font-style: italic; */
     color: #e5e7eb;
     text-decoration: underline;
     text-underline-offset: 2px;
