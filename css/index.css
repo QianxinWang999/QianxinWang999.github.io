@@ -29,13 +29,13 @@
 
 .banner h2 {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 3.75rem;
     font-weight: 600;
 }
 
 .banner h1 {
     margin-bottom: 1rem;
-    font-size: 4.5rem;
+    font-size: 6rem;
     line-height: 1.2;
     font-weight: 700;
 }
@@ -82,7 +82,7 @@
 
 @media (max-width: 768px) {
     .banner h1 {
-        font-size: 3rem;
+        font-size: 3.75rem;
     }
 
     .banner h2 {
@@ -106,7 +106,7 @@
 
 @media (max-width: 480px) {
     .banner h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .banner h2 {
