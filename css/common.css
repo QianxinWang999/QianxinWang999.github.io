@@ -1,6 +1,6 @@
 :root {
     /* 主色调 */
-    --color-primary: #893290;
+    --color-primary: #757D21;
     --color-primary-light: #D4A6E3;
     --color-primary-dark: #6B2C8A;
     
@@ -88,7 +88,6 @@ li {
 .navbar .nav {
     display: flex;
     gap: 2rem;
-    background-color: var(--color-primary);
     transition: all 0.3s ease-in-out;
 }
 
@@ -126,7 +125,8 @@ li {
 
 .footer {
     padding: 4rem 0;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background-color: rgba(117, 125, 33, 0.6);
     color: var(--color-text-light-gray);
 }
 
