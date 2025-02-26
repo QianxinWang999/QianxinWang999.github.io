@@ -268,7 +268,7 @@ li {
         right: 0;
         padding: 0;
         gap: 0;
-        background-color: #893290;
+        background-color: rgb(172, 177, 122);
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         opacity: 0;
         visibility: hidden;
@@ -328,7 +328,6 @@ li {
         display: block;
         padding: 0;
         border: none;
-        background-color: #893290;
         box-shadow: none;
     }
 
